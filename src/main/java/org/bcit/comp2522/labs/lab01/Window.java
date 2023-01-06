@@ -4,9 +4,15 @@ import processing.core.PApplet;
 
 /**
  * This program draws a figure using 2D primitives.
+ *
+ * @author jeevan virk
+ * @version 1.0
  */
 public class Window extends PApplet {
 
+  /**
+   * Size of the window.
+   */
   public void settings() {
     size(1000, 500);
   }
@@ -15,7 +21,6 @@ public class Window extends PApplet {
    * Drawing figure.
    */
   public void draw() {
-    ellipse(mouseX, mouseY, 50, 50);
     circle(134, 184, 150);
     circle(350, 184, 150);
     line(210, 184, 275, 184);
@@ -23,6 +28,9 @@ public class Window extends PApplet {
     line(144, 110, 275, 60);
   }
 
+  /**
+   * Changing color of the background on pressing the mouse.
+   */
   public void mousePressed() {
     background(64);
   }
